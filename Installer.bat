@@ -29,8 +29,8 @@ echo =================
 (
 echo list volume
 ) | diskpart
-
-set /p volumeNumber=Enter the volume number to Deploy WinRE environment: 
+@echo NOTE: \\\All data will be deleted on selected volume.\\\
+set /p volumeNumber=Select the volume number to Deploy WinRE environment: 
 
 (
 echo select volume %volumeNumber%
