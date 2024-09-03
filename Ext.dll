@@ -1,0 +1,5 @@
+sel vol C
+shrink desired=6000
+create par primary
+format fs=ntfs label="Windows_setup" quick
+exit
