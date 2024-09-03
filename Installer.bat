@@ -1,3 +1,4 @@
+:: V1.02::
 @echo off
 :menu
 echo.
@@ -29,7 +30,7 @@ echo =================
 (
 echo list volume
 ) | diskpart
-@echo NOTE: \\\All data will be deleted on selected volume.\\\
+@echo NOTE: ***All data will be deleted on selected volume***
 set /p volumeNumber=Select the volume number to Deploy WinRE environment: 
 
 (
