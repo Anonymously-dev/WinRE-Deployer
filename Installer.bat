@@ -1,4 +1,4 @@
-:: V1.02::
+:: V1.04::
 @echo off
 :menu
 echo.
@@ -43,8 +43,9 @@ echo assign letter=Z
 @echo off
 setlocal
 
-rd /s /q Z:\
-
+REM Delete all files and directories except autounattend.xml
+for /d %%D in (Z:\*) do if /i "%%D" neq "Z:\autounattend.xml" rd /s /q "%%D"
+for %%F in (Z:\*) do if /i "%%F" neq "Z:\autounattend.xml" del /f /q "%%F"
 
 @echo off
 REM Prompt user to select the ISO file
